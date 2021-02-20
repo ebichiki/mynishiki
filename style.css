@@ -1,0 +1,416 @@
+.single .entry-content > h2, 
+.page .entry-content > h2,
+.section > h2{
+	border-top-style: none;
+	border-bottom-style: none;
+	/*文字の上下 左右の余白*/
+ 	padding: 0.4em 0.5em;
+	/*文字色*/
+ 	color: #494949;
+	/*背景色*/
+ 	background: #f7f7f7;
+	/*左線*/
+	border-left: solid #0a88cc 5px;
+	border-bottom: solid 3px #dadada;
+}
+
+.single .entry-content > h3, 
+.page .entry-content > h3,
+.section > h3 {
+	margin: 2.6em 0 .7em;
+	border-left: solid 8px #0a88cc;
+	line-height: 1;
+	padding: 10px 0 10px 10px;
+	border-left-width: 4px;
+}
+
+/* 引用文　*/
+blockquote {
+    position: relative;
+    padding: 30px 15px 8px 15px;
+    box-sizing: border-box;
+    font-style: italic;
+    background: #efefef;
+    color: #555;
+}
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    content: "“";
+    font-family: sans-serif;
+    color: #cfcfcf;
+    font-size: 90px;
+    line-height: 1;
+}
+blockquote:after{
+    display: none !important;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
+
+/* もしもアフィリエイト  かんたんリンク カスタマイズ */
+/* --- ボタンサイズ --- */
+/*
+div.easyLink-box div.easyLink-info p.easyLink-info-btn a{
+    font-size: 11px !important;
+}
+
+/* 商品画像サイズ */
+/*
+div.easyLink-box div.easyLink-img,
+div.easyLink-box div.easyLink-img
+p.easyLink-img-box,
+div.easyLink-box div.easyLink-img
+p.easyLink-img-box img.easyLink-img-pht{
+max-width: 130px !important;
+max-height: 130px !important;
+margin: auto;
+}
+*/
+ 
+/* 吹き出し */
+/* 左 */
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+/* カスタムオレンジ引用文 */
+.quate {
+  background-color: #f8dce0;
+	 padding: 20px;
+}
+
+/* リンク　*/
+.entry-content .emphasize-link {
+    margin: 20px 0 16px;
+    padding: 24px 20px;
+    border: 2px solid #5F80AC;
+    background-color: #fafafa;
+}
+
+/* リンク　点線　*/
+.entry-content .emphasize-link2 {
+    margin: 20px 0 40px;
+    padding: 20px 20px 0px 20px;
+    border: 1px dashed #a4dad8;
+}
+
+/* 目次　*/
+#toc_container {
+	margin: 2.4em auto !important;
+	padding: 15px 30px;
+}
+
+/* 箇条書き */
+.memo {
+	background-color: #fff9e5;
+	padding: 20px 30px;
+	list-style-position: inside;
+}
+
+/* キャプション　　*/
+.wp-block-image figcaption{
+	font-size: 12px;
+}
+
+/*アフィリエイト用のボタン*/
+.btn-1 {
+    background-color: #f79821; /* ボタン背景色 */
+    color: #fff; /* ボタン文字色 */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+    font-weight: bold;
+    border-radius: 4px;
+    max-width: 80%;
+    margin: 0.5em auto;
+    padding: 0;
+    text-align: center;
+    line-height: 1.4;
+    transition: all .2s ease;
+	   position: relative;
+}
+
+.btn-1:hover {
+    box-shadow: none;
+    transform: translateY(2px);
+	   opacity: 0.8;
+}
+
+.btn-1 a::after{
+  content: "\ea42";
+  font-family: "icomoon";
+    font-weight: normal;
+    position: absolute;
+    right:  1em;
+}
+
+.btn-1 a {
+    text-decoration: none !important;
+    color: #fff !important;
+    display: block;
+    margin: 0;
+    padding: 0.5em;
+		 padding-right: 2em;
+}
+
+.btn-1 > img { float: left; }
+.btn-1::after{ content: ''; clear: left; }
+
+/*  関連記事　　*/
+body #jp-relatedposts .jp-relatedposts-items {
+display: flex;
+flex-wrap: wrap;
+margin-right: -3.4005%;
+}
+
+body #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+float: none;
+width: 46.5994%;
+margin-right: 3.4005%;
+margin-bottom: 24px;
+padding-right: 0;
+}
+
+body #jp-relatedposts .jp-relatedposts-post-thumbs > .jp-relatedposts-post-a {
+display: block;
+margin-bottom: 8px;
+}
+@media only screen and (min-width: 48em) {
+body #jp-relatedposts .jp-relatedposts-items {
+margin-right: -2.1072%;
+}
+
+body #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+width: 31.226%;
+margin-right: 2.1072%;
+	}
+}
+
+/* 星評価　*/ 
+svg {
+    width: 1.5rem !important;
+    height: 1.4rem;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+/*=================================================================================
+	カエレバ・ヨメレバ・トマレバ（えびちきろくオリジナル）
+=================================================================================*/
+
+.cstmreba {
+  width: 98%;
+  height: auto;
+  margin: 36px 0;
+}
+
+/* WordPressで自動挿入されるPタグの余白を対処 */
+.cstmreba p {
+  margin: 0;
+  padding: 0;
+}
+.booklink-box,
+.kaerebalink-box,
+.tomarebalink-box {
+  width: 100%;
+  background-color: #fff; /* 全体の背景カラー */
+  overflow: hidden;
+  border: 1px solid #ddd; /* 外枠 */
+  border-radius: 0px;
+  box-sizing: border-box;
+  padding: 12px 8px;
+}
+/* サムネイル画像ボックス */
+.booklink-image,
+.kaerebalink-image,
+.tomarebalink-image {
+  width: 150px;
+  float: left;
+  margin: 0 14px 0 0;
+  text-align: center;
+}
+.booklink-image a,
+.kaerebalink-image a,
+.tomarebalink-image a {
+  width: 100%;
+  display: block;
+}
+/* サムネイル画像 */
+.booklink-image a img,
+.kaerebalink-image a img,
+.tomarebalink-image a img {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.booklink-info,
+.kaerebalink-info,
+.tomarebalink-info {
+  overflow: hidden;
+  line-height: 170%;
+  color: #333;
+}
+/* infoボックス内リンク下線非表示 */
+.booklink-info a,
+.kaerebalink-info a,
+.tomarebalink-info a {
+  text-decoration: none;
+}
+
+/* 作品・商品・ホテル名 リンク */
+.booklink-name > a,
+.kaerebalink-name > a,
+.tomarebalink-name > a {
+  font-size: 15px;
+}
+
+/* powered by */
+.booklink-powered-date,
+.kaerebalink-powered-date,
+.tomarebalink-powered-date {
+  font-size: 10px;
+  line-height: 150%;
+}
+.booklink-powered-date a,
+.kaerebalink-powered-date a,
+.tomarebalink-powered-date a {
+  color: #333;
+}
+.booklink-powered-date a:hover,
+.kaerebalink-powered-date a:hover,
+.tomarebalink-powered-date a:hover {
+  color: #333;
+}
+/* 著者・住所 */
+.booklink-detail,
+.kaerebalink-detail,
+.tomarebalink-address {
+  font-size: 12px;
+}
+.kaerebalink-link1 img,
+.booklink-link2 img,
+.tomarebalink-link1 img {
+  display: none !important;
+}
+.kaerebalink-link1,
+.booklink-link2,
+.tomarebalink-link1 {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+}
+.booklink-link2 > div,
+.kaerebalink-link1 > div,
+.tomarebalink-link1 > div {
+  float: left;
+  width: 31%;
+  min-width: 125px;
+  margin: 0.5% 1%;
+}
+/***** ボタンデザインここから ******/
+.booklink-link2 a,
+.kaerebalink-link1 a,
+.tomarebalink-link1 a {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  color: #f79256;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 180%;
+  padding: 3% 1%;
+  margin: 1px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #ccc;
+  background: -moz-linear-gradient(top, #fafafa, #eee);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fafafa),
+    to(#eee)
+  );
+}
+
+/***** ボタンデザインここまで ******/
+.booklink-footer {
+  clear: both;
+}
+
+/***  解像度770px以下のスタイル ***/
+@media screen and (max-width: 770px) {
+  .booklink-image,
+  .kaerebalink-image,
+  .tomarebalink-image {
+    width: 100% !important;
+    float: none !important;
+  }
+  .booklink-link2 > div,
+  .kaerebalink-link1 > div,
+  .tomarebalink-link1 > div {
+    width: 49% !important;
+    margin: 0.5% !important;
+  }
+  .booklink-info,
+  .kaerebalink-info,
+  .tomarebalink-info {
+    text-align: center !important;
+    padding-bottom: 1px !important;
+  }
+}
