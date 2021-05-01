@@ -156,16 +156,49 @@ margin: auto;
 	padding: 15px 30px;
 }
 
+
 /* 箇条書き */
+
 .memo {
-	background-color: #fff9e5;
-	padding: 20px 30px;
-	list-style-position: inside;
+background-color: #fff9e5;
+	   padding: 20px 30px;
+    margin: 2.4em auto !important;
+    background: #fff9e5;
+    color: #545454;
+			list-style-position: inside;
+}
+
+
+.memo_ttl {
+    margin-bottom: 5px;
+    color: #ffb36b;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.memo_ttl:before {
+
+    font-size: 17px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px 0 0;
+    border-radius: 50%;
+    background: #ffb36b;
+    color: #fff;
+    font-family: FontAwesome;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+		 content: "\e906";
+    font-family: "icomoon";
 }
 
 /* キャプション　　*/
-.wp-block-image figcaption{
-	font-size: 12px;
+.wp-block-image figcaption,
+.blocks-gallery-caption{
+	font-size: 13px;
 }
 
 /*アフィリエイト用のボタン*/
@@ -247,6 +280,12 @@ svg {
     vertical-align: bottom;
     cursor: pointer;
 }
+
+/*
+p:empty::before{
+    content: "";
+}
+*/
 
 /*=================================================================================
 	カエレバ・ヨメレバ・トマレバ（えびちきろくオリジナル）
@@ -412,5 +451,88 @@ svg {
   .tomarebalink-info {
     text-align: center !important;
     padding-bottom: 1px !important;
+  }
+}
+
+/* ブログカード　*/
+.blog-card {
+  border: 2px solid #e5e5e5;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1em 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .2);
+  -moz-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.blog-card a {
+  text-decoration: none!important;
+  display: block;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-card a:hover {
+  color: #333;
+  background: rgba(235, 235, 235, 0.8);
+  text-decoration: none;
+}
+
+.blog-card-thumbnail {
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.blog-card-thumbnail img {
+  padding: 0;
+  max-width: 100%;
+}
+
+.blog-card-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0.4em;
+  border-left: #e5e5e5 solid 2px;
+}
+
+.blog-card-title {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-card-excerpt {
+  display: none;/*消します*/
+}
+
+.blog-card .clear {
+  clear: both;
+}
+
+@media screen and (max-width: 500px) {
+  .blog-card-title {
+    font-size: .85em;
+  }
+  .blog-card-thumbnail {
+    width: 160px;
   }
 }
